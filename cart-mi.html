@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-divice-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Prouducts-Detailes-Page - 361° Yemen</title>
+    <link rel="stylesheet" href="style361.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+<div class="header">
+<div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="./img/main bage/logo.png" width="125px" >
+    </div>
+      <nav>
+        <ul id="menuitems">
+        <li><a href="index361.html">Home</a></li>
+        <li><a href="product361.html">Products</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">Account</a></li>
+        </ul>
+      </nav>
+      <a href="cart-361.html"><img src="./img/main bage/cart.png" alt="cart" width="30px " height="30px"></a>
+      <img src="./img//main bage/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+
+</div>
+</div>
+
+<!----cart detailes-------->
+<div class="small container cart-page">
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>
+<div class="cart-info">
+    <img src="./img//main bage/exclusive.png" >
+    <div class="data">
+        <p>Mi Band 5 </p>
+        <small>Price: $20.00</small><br>
+        <a href="">Remove</a>
+    </div>
+</div>
+
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>20.00$</td>
+
+        </tr>
+
+
+
+    </table>
+
+
+<div class="total-price">
+
+<table>
+    <tr>
+        <td>Subtotal</td>
+        <td>$20.00</td>
+    </tr>
+    <tr>
+        <td>Tax</td>
+        <td>$1.00</td>
+    </tr>
+    <tr>
+        <td>Total</td>
+        <td>$21.00</td>
+    </tr>
+
+</table>
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+ 
+<!-----footer------->
+<div class="footer">
+    <div class="small-container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Visit Our Main Page</h3>
+                <p>You can visit <span>361°</span> by this link</p>
+                <div class="main-page-link">
+                    <a class="link" href="https://www.facebook.com/361.lewarehouseltd/">click Here </a>
+                </div>
+            </div>
+
+            <div class="footer-col-2">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+
+            <div class="footer-col-3">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+<hr>
+<p class="Copyright">Copyright 2021 -Yasser Esam</p>
+
+    </div>
+</div>
+
+<!-----------js for toggle menu ------->
+<script>
+var menuitems = document.getElementById("menuitems");
+
+menuitems.style.maxHeight = "0px";
+
+
+function menutoggle(){
+if(menuitems.style.maxHeight == "0px"){
+
+    menuitems.style.maxHeight = "200px"
+}
+else{
+
+    menuitems.style.maxHeight = "0px"
+}
+
+}
+
+</script>
+
+
+<!-------js for product gallary --------->
+
+<script>
+
+var ProductImg = document.getElementById("ProductImg");
+var smallImg = document.getElementsByClassName("small-img");
+
+smallImg[0].onclick = function()
+{
+
+    ProductImg.src = smallImg[0].src;
+}
+smallImg[1].onclick = function()
+{
+
+    ProductImg.src = smallImg[1].src;
+}
+smallImg[2].onclick = function()
+{
+
+    ProductImg.src = smallImg[2].src;
+}
+smallImg[3].onclick = function()
+{
+
+    ProductImg.src = smallImg[3].src;
+}
+
+
+</script>
+
+</body>
+</html>
